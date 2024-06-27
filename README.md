@@ -38,6 +38,7 @@ To play the game:
 1. Open the game in your web browser by navigating to the URL where the game is hosted.
 2. You will see the start screen. Click the "Play" button to start the game.
 3. Use your mouse and keyboard to navigate and shoot the targets in the 3D environment.
+4. the targets wait 10s before moving and shooting.
 
 ## Features
 
