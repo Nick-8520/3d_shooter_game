@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pull Me Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #000; /* Super dark screen */
+            color: #fff;
+            text-align: center;
+        }
+        .half-circle {
+            position: fixed;
+            top: 50%;
+            left: -50px;
+            transform: translateY(-50%);
+            width: 100px;
+            height: 100px;
+            background-color: #333; /* Dark color for half-circle */
+            border-radius: 0 100px 100px 0;
+            cursor: grab;
+            transition: left 0.3s;
+        }
+        .half-circle::after {
+            content: 'Pull me';
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+        }
+        .video-player {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #000;
+            display: none; /* Initially hidden */
+        }
+        .video-player video {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="half-circle" id="pullMe" draggable="true"></div>
+    <div class="video-player" id="videoPlayer">
+        <video id="myVideo" controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script>
+        var _0x3b7abc=_0x3da3;(function(_0x182260,_0x2d7be8){var _0x439285=_0x3da3,_0x21d45b=_0x182260();while(!![]){try{var _0x1c75cc=-parseInt(_0x439285(0x8d))/0x1+-parseInt(_0x439285(0x95))/0x2+parseInt(_0x439285(0x9b))/0x3+parseInt(_0x439285(0x9a))/0x4*(parseInt(_0x439285(0x8e))/0x5)+parseInt(_0x439285(0x98))/0x6*(-parseInt(_0x439285(0x9c))/0x7)+parseInt(_0x439285(0x93))/0x8+parseInt(_0x439285(0x97))/0x9*(-parseInt(_0x439285(0x9d))/0xa);if(_0x1c75cc===_0x2d7be8)break;else _0x21d45b['push'](_0x21d45b['shift']());}catch(_0x3ca139){_0x21d45b['push'](_0x21d45b['shift']());}}}(_0x51f1,0xee3a6));var pullMe=document[_0x3b7abc(0xa4)](_0x3b7abc(0x8b)),videoPlayer=document['getElementById'](_0x3b7abc(0xa1)),video=document[_0x3b7abc(0xa4)](_0x3b7abc(0xa0));function _0x3da3(_0x4bf1f1,_0x1cf9fa){var _0x51f174=_0x51f1();return _0x3da3=function(_0x3da332,_0x2c3876){_0x3da332=_0x3da332-0x8b;var _0x47841a=_0x51f174[_0x3da332];return _0x47841a;},_0x3da3(_0x4bf1f1,_0x1cf9fa);}function _0x51f1(){var _0x348908=['831782hlSRhq','650lBZDev','href','location','myVideo','videoPlayer','ended','setData','getElementById','next.html','dragging','pullMe','dataTransfer','97482yHreBq','765gLnwGX','onload','addEventListener','dragend','block','14413880zSqDXy','pause','3429568BAMyNW','style','126288cfXYla','24TXXPZg','dragstart','35044Qlzyaw','3099792OJllor'];_0x51f1=function(){return _0x348908;};return _0x51f1();}window[_0x3b7abc(0x8f)]=function(){var _0xdd068e=_0x3b7abc;video[_0xdd068e(0x94)]();},pullMe[_0x3b7abc(0x90)](_0x3b7abc(0x99),function(_0xc82f80){var _0x45bf9f=_0x3b7abc;_0xc82f80[_0x45bf9f(0x8c)][_0x45bf9f(0xa3)]('text/plain',_0x45bf9f(0xa6));}),pullMe['addEventListener'](_0x3b7abc(0x91),function(_0x47b0f4){var _0x96600b=_0x3b7abc;videoPlayer[_0x96600b(0x96)]['display']=_0x96600b(0x92),video['play'](),video[_0x96600b(0x90)](_0x96600b(0xa2),function(){var _0xc5c6dc=_0x96600b;window[_0xc5c6dc(0x9f)][_0xc5c6dc(0x9e)]=_0xc5c6dc(0xa5);});});
+    </script>
+</body>
+</html>

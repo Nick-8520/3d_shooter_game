@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Game</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        #playButton {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        #videoContainer {
+            display: none;
+        }
+        #countdown {
+            font-size: 24px;
+            margin-top: 20px;
+            color:#880808
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <button id="playButton">Play Secret Game</button>
+        <div id="videoContainer">
+            <video id="secretVideo" width="640" height="360">
+                <source src="vivd.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div id="countdown"></div>
+    </div>
+
+    <script>
+        const _0x4f6056=_0x3d06;(function(_0x2618bb,_0x13230e){const _0x9ecee6=_0x3d06,_0x46d6e7=_0x2618bb();while(!![]){try{const _0x2a8eca=parseInt(_0x9ecee6(0x17f))/0x1*(parseInt(_0x9ecee6(0x17b))/0x2)+parseInt(_0x9ecee6(0x163))/0x3+-parseInt(_0x9ecee6(0x16c))/0x4+parseInt(_0x9ecee6(0x16a))/0x5*(parseInt(_0x9ecee6(0x171))/0x6)+-parseInt(_0x9ecee6(0x179))/0x7*(parseInt(_0x9ecee6(0x16f))/0x8)+parseInt(_0x9ecee6(0x178))/0x9+-parseInt(_0x9ecee6(0x169))/0xa;if(_0x2a8eca===_0x13230e)break;else _0x46d6e7['push'](_0x46d6e7['shift']());}catch(_0x11c216){_0x46d6e7['push'](_0x46d6e7['shift']());}}}(_0x13ab,0x66466));const playButton=document[_0x4f6056(0x17c)](_0x4f6056(0x166)),videoContainer=document[_0x4f6056(0x17c)](_0x4f6056(0x165)),video=document[_0x4f6056(0x17c)](_0x4f6056(0x168)),countdown=document[_0x4f6056(0x17c)]('countdown');playButton[_0x4f6056(0x17e)](_0x4f6056(0x164),()=>{const _0x59263b=_0x4f6056;playButton[_0x59263b(0x173)][_0x59263b(0x180)]='none',videoContainer[_0x59263b(0x173)][_0x59263b(0x180)]='block',video[_0x59263b(0x167)](),updateCountdown();});function _0x3d06(_0x8ff315,_0x417211){const _0x13ab49=_0x13ab();return _0x3d06=function(_0x3d061e,_0xb4fa3e){_0x3d061e=_0x3d061e-0x163;let _0x2844fb=_0x13ab49[_0x3d061e];return _0x2844fb;},_0x3d06(_0x8ff315,_0x417211);}function _0x13ab(){const _0x33c1a8=['secretVideo','469180uklWCO','5wYYOcZ','textContent','2691364HSPMgx','game1.html','toString','66808bryTMj','Starting\x20in:\x20','1957842DWBWiw','currentTime','style','ceil','floor','padStart','location','5425020cjxVes','532ygKqlG','00:00','308yOXdYP','getElementById','href','addEventListener','2266yuOxuG','display','1485906hWAtDM','click','videoContainer','playButton','play'];_0x13ab=function(){return _0x33c1a8;};return _0x13ab();}function updateCountdown(){const _0xea6d37=_0x4f6056,_0x13eeeb=Math[_0xea6d37(0x174)](video['duration']-video[_0xea6d37(0x172)]),_0x157f6f=Math[_0xea6d37(0x175)](_0x13eeeb/0x3c),_0x488cf2=Math['floor'](_0x13eeeb%0x3c);countdown[_0xea6d37(0x16b)]=_0xea6d37(0x170)+_0x157f6f[_0xea6d37(0x16e)]()[_0xea6d37(0x176)](0x2,'0')+':'+_0x488cf2[_0xea6d37(0x16e)]()[_0xea6d37(0x176)](0x2,'0'),_0x13eeeb>0x0?requestAnimationFrame(updateCountdown):(countdown[_0xea6d37(0x16b)]=_0xea6d37(0x17a),setTimeout(()=>{const _0x1bfdce=_0xea6d37;window[_0x1bfdce(0x177)][_0x1bfdce(0x17d)]=_0x1bfdce(0x16d);},0x3e8));}
+    </script>
+</body>
+</html>
