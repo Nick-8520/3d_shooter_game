@@ -15,7 +15,7 @@ To get started with the 3D Shooter Game, you can either host it on GitHub Pages 
 
 ### GitHub Pages
 
-the game should be available at `https://Nick-8520.github.io/3d_shooter_game`.
+the game should be available at https://Nick-8520.github.io/3d_shooter_game.
 
 ### Hosting on a Server
 
